@@ -8,7 +8,7 @@ Pertemuan 2 - 21 Februari 2021
 Mempelajari mengenai struktur kendali PHP yaitu pengulangan dan pengkondisian
 */
 
-// PENGKONDISIAN / PERCABANGAN
+// pengkondisian / percabangan
 // if else
 // if else if else
 // ternary (digunakan untuk mengganti if else yang sederhana)
