@@ -24,7 +24,7 @@
             <tr>
             <th>Baris <?= $i; ?></th>
                 <?php for( $j = 1; $j <= 5; $j++ ) : ?>
-                    <td><?php echo "Baris $i,Kolom $j"; ?></td>
+                    <td><?php echo "Baris $i, Kolom $j"; ?></td>
                 <?php endfor; ?>
             </tr>  
         <?php endfor; ?>
