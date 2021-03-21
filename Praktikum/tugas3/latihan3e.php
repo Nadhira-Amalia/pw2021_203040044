@@ -103,13 +103,13 @@ $bakery = [
      <table class="table table-bordered table-hover">
         <thead class="table-primary">
             <tr>
-            <th scope="col">No</th>
-            <th scope="col">Name</th>
-            <th scope="col">Product</th>
-            <th scope="col">Topping</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-            <th scope="col">Category</th>
+            <th >No</th>
+            <th >Name</th>
+            <th >Product</th>
+            <th >Topping</th>
+            <th >Description</th>
+            <th >Price</th>
+            <th >Category</th>
             </tr>
         </thead>
     <tbody  class="table-info">
