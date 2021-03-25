@@ -1,0 +1,187 @@
+/* css detail */
+.deli-card {
+position: relative;
+box-shadow: 5px 15px 50px rgb(31, 23, 23);
+max-width: 420px;
+transition: all .8s;
+overflow: hidden;
+cursor: pointer;
+top: 75px;
+}
+
+.deli-card .card-footer span {
+  color: #c59b60;
+}
+
+.deli-card .card-header .title-text {
+color: #000;
+font-family: 'Great Vibes';
+margin-top: 4%;
+margin-bottom: -1%;
+font-size: 38px;
+color: #c59b60;
+}
+
+.deli-card .card-body img {
+  /* height: 18em;
+  width: 40em; */
+  height: 39vh;
+  width: 100%;
+  /* height: 280px;
+  width: 100%; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+.rotate {
+perspective: 100rem;
+}
+
+.back {
+position: absolute;
+top: -100%;
+background: #ffffff;
+height: 100%;
+width: 100%;
+opacity: 0;
+user-select: none;
+pointer-events: none;
+transform: rotateY(180deg);
+transition: top .8s opacity .4s
+}
+
+.text-color {
+color: white;
+}
+
+.rotate:hover .deli-card {
+transform: 
+rotateY(180deg);
+}
+
+.rotate:hover .back {
+opacity: 1;
+top: 0;
+user-select: auto;
+pointer-events: auto;
+}
+
+
+.back-content {
+position: absolute;
+top: 55%;
+left: 50%;
+right: -40%;
+/* padding-right: -300px; */
+/* margin-left: 80%; */
+/* margin-right: 80%; */
+transform: translate(-50%, -50%);
+}
+
+.back-content h3 {
+font-size: 18px;
+}
+
+.back .back-content h1 {
+  font-family: 'Great Vibes';
+}
+
+.back-content .btn {
+color: black;
+}
+
+.back-content .btn {
+color: #dbc1ac;
+font-weight: bold;
+border: 2px solid rgb(94, 70, 20);
+font-size: 25px;
+}
+
+.hvr-right {
+display: inline-block;
+vertical-align: middle;
+transition-duration: 0.5s;
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px #000;
+position: relative;
+transition-property: color;
+}
+
+.hvr-right::before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #dbc1ac;
+transition-timing-function: ease-out;
+transform: scaleX(0);
+transform-origin: 0 50%;
+transition-property: transform;
+transition-duration: 0.5s;
+}
+
+.hvr-right:hover, .hvr-right:focus,
+.hvr-right:active {
+color: rgb(4, 4, 32);
+}
+
+.hvr-right:hover::before, .hvr-right:focus::before,
+.hvr-right:active::before {
+transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+transform: scaleX(1);
+}
+
+/* css index */
+#menu-card .card-header {
+  transition: ease-out 0.8s;
+  animation: bg_color_change 10s infinite linear;
+}
+
+@keyframes bg_color_change {
+    0%,100%{
+        /* background-color: pink; */
+        background-color:  rgb(19, 35, 63);
+    }
+    25%{
+      background-color:rgb(71, 113, 158);
+        /* background-color: rgb(252, 152, 169); */
+    }
+    50%{
+        background-color: rgb(20, 36, 65);
+        /* rgb(32, 55, 96); */
+    }
+    75%{
+        background-color: rgb(49, 81, 116);
+        /* rgb(71, 113, 158); */
+    }
+  }
+
+#menu-card {
+    margin-left: 30%;
+}
+
+#menu-card .card-header h1{
+    font-family: 'Great Vibes';
+    color: #c59b60;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#menu-card a {
+    text-decoration: none;
+    text-align: center;
+    color: #c59b60;
+    font-size: 20px;
+}
+
+#menu-card a:hover {
+    color: rgb(20, 36, 65);
+}
+
+#menu-card li {
+    text-decoration: none;
+    text-align: center;
+}
